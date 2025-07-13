@@ -23,6 +23,8 @@ jobs:
             - name: 'List dirs'
               run: ls
             
+            - name: 'Running Test case' # To run test case if any malitious code pushed
+              run: npm run test
             - name: 'Create prject build'
               run: npm run build
             

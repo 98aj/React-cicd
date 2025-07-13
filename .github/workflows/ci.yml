@@ -24,7 +24,7 @@ jobs:
               run: ls
             
             - name: 'Create prject build'
-              run: npm build
+              run: npm run build
             
             - name: 'List dirs'
               run: ls

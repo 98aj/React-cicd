@@ -25,7 +25,7 @@ jobs:
             
             - name: 'Running Test case' # To run test case if any malitious code pushed
               run: npm run test
-            - name: 'Create prject build'
+            - name: 'Create project build' # If test case fails then build step will not be executed
               run: npm run build
             
             - name: 'List dirs'

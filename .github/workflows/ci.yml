@@ -30,3 +30,11 @@ jobs:
             
             - name: 'List dirs'
               run: ls
+
+            # Now if we and o transfer/share data between pipline we can take help of artifacts
+            # Artifcat is place where we will upload our build folder and later download for CD pipline
+            - name: 'Upload product-ready build' 
+              uses: actions/upload-artifact@v4
+              with:
+                name: build # we need to provide name and path of action
+                path: dist #path of build folder

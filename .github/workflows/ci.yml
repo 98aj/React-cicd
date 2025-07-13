@@ -13,3 +13,6 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: '20'
+            
+            - name: 'Clone repo' # This are new runner server provided by github so they dont have node and also they dont have your repo so we need to clone it here
+              uses: actions/checkout@v4
